@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view alpha="0.80000000000000004" contentMode="scaleToFill" id="iN0-l3-epB" customClass="ColorSquareView" customModule="StoryboardDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="120" height="250"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xvd-U9-7Nu">
+                    <rect key="frame" x="4" y="44" width="112" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="scribble.variable" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="owh-Lz-cok">
+                    <rect key="frame" x="4" y="69" width="112" height="156"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="156" id="d3N-pt-LtN"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rrX-Fh-QLi">
+                    <rect key="frame" x="4" y="229" width="112" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemGray5Color"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="rrX-Fh-QLi" secondAttribute="bottom" constant="4" id="0EI-kx-5TK"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="xvd-U9-7Nu" secondAttribute="trailing" constant="4" id="ILT-Un-4os"/>
+                <constraint firstItem="rrX-Fh-QLi" firstAttribute="top" secondItem="owh-Lz-cok" secondAttribute="bottom" constant="4" id="Lt1-03-W1f"/>
+                <constraint firstItem="rrX-Fh-QLi" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="4" id="kRg-oK-JzM"/>
+                <constraint firstItem="xvd-U9-7Nu" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="lF8-NL-7xD"/>
+                <constraint firstItem="xvd-U9-7Nu" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="4" id="q5c-pc-3h5"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="rrX-Fh-QLi" secondAttribute="trailing" constant="4" id="q8D-t1-8Wt"/>
+                <constraint firstItem="owh-Lz-cok" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="4" id="snD-qV-hNC"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="owh-Lz-cok" secondAttribute="trailing" constant="4" id="tcW-xj-Qoj"/>
+                <constraint firstItem="owh-Lz-cok" firstAttribute="top" secondItem="xvd-U9-7Nu" secondAttribute="bottom" constant="4" id="xKj-pi-V4b"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="imgView" destination="owh-Lz-cok" id="48p-jA-vxv"/>
+                <outlet property="lblBottom" destination="rrX-Fh-QLi" id="v3o-uG-Tkf"/>
+                <outlet property="lblTop" destination="xvd-U9-7Nu" id="xSO-Lt-azD"/>
+            </connections>
+            <point key="canvasLocation" x="134.78260869565219" y="-140.625"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="scribble.variable" catalog="system" width="128" height="118"/>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
