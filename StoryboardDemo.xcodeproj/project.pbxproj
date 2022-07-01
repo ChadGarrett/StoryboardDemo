@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E5355C4F286CE61B0049F360 /* ColorSquareView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5355C4E286CE61A0049F360 /* ColorSquareView.xib */; };
+		E5356011286DE9160049F360 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5356010286DE9160049F360 /* SecondViewController.swift */; };
 		E563038E286B56E8008E5F23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E563038D286B56E8008E5F23 /* AppDelegate.swift */; };
 		E5630390286B56E8008E5F23 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E563038F286B56E8008E5F23 /* SceneDelegate.swift */; };
 		E5630392286B56E8008E5F23 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5630391286B56E8008E5F23 /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		E5355C4E286CE61A0049F360 /* ColorSquareView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ColorSquareView.xib; sourceTree = "<group>"; };
+		E5356010286DE9160049F360 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		E563038A286B56E8008E5F23 /* StoryboardDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StoryboardDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E563038D286B56E8008E5F23 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E563038F286B56E8008E5F23 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				E563039B286B56EA008E5F23 /* Info.plist */,
 				E56303A3286CDFBA008E5F23 /* ColorSquareView.swift */,
 				E5355C4E286CE61A0049F360 /* ColorSquareView.xib */,
+				E5356010286DE9160049F360 /* SecondViewController.swift */,
 			);
 			path = StoryboardDemo;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				E5630392286B56E8008E5F23 /* ViewController.swift in Sources */,
 				E56303A4286CDFBA008E5F23 /* ColorSquareView.swift in Sources */,
 				E563038E286B56E8008E5F23 /* AppDelegate.swift in Sources */,
+				E5356011286DE9160049F360 /* SecondViewController.swift in Sources */,
 				E5630390286B56E8008E5F23 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

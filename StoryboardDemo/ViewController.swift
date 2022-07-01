@@ -8,39 +8,40 @@
 import UIKit
 
 class ViewController: UIViewController {
-    @IBOutlet var colorStackView: UIStackView!
-    @IBOutlet weak var btnAddSquare: UIButton!
-    @IBOutlet var customStackView: UIStackView!
+    @IBOutlet var greenView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
        
+        greenView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(onGreenView)))
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        print("Huh")
+        super.prepare(for: segue, sender: sender)
     }
     
     @IBAction func onAddSquare(_ sender: Any) {
         print("Adding square")
         defer { print("Square added") }
         
-//        let newSquare = ColorSquareView()
-//        newSquare.backgroundColor = UIColor.orange
-//        colorStackView.addArrangedSubview(newSquare)
+        let newSquare = ColorSquareView()
+        newSquare.backgroundColor = UIColor.orange
+//        stackView.addArrangedSubview(newSquare)
         
         
-        let newSquare: ColorSquareView = UIView.fromNib()
-//        addWidthConstraint(for: newSquare)
-//        newSquare.widthAnchor.constraint(equalToConstant: 120).isActive = true
-        newSquare.lblTop.text = "Top"
-        newSquare.lblBottom.text = "Bottom"
-        customStackView.addArrangedSubview(newSquare)
-        UIView.animate(withDuration: 0.3) { [weak self] in
-            self?.view.layoutIfNeeded()
-        }
+//        let newSquare: ColorSquareView = UIView.fromNib()
+//        newSquare.lblTop.text = "Top"
+//        newSquare.lblBottom.text = "Bottom"
+//        customStackView.addArrangedSubview(newSquare)
+//        UIView.animate(withDuration: 0.3) { [weak self] in
+//            self?.view.layoutIfNeeded()
+//        }
     }
     
-    func addWidthConstraint(for view: UIView) {
-        let constraint = view.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width/3)
-        
-        view.addConstraint(constraint)
+    @objc func onGreenView() {
+        print("yay")
     }
 }
