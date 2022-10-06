@@ -11,6 +11,18 @@ final class ColorSquareView: UIView {
     @IBOutlet var lblTop: UILabel!
     @IBOutlet var imgView: UIImageView!
     @IBOutlet var lblBottom: UILabel!
+    
+    func setTopLabel(to text: String) {
+        if lblTop != nil {
+            lblTop.text = text
+        } else {
+            print("What!")
+        }
+    }
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+    }
 }
 
 extension UIView {

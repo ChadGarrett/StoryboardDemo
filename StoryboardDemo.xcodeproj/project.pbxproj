@@ -16,6 +16,7 @@
 		E5630397286B56EA008E5F23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5630396286B56EA008E5F23 /* Assets.xcassets */; };
 		E563039A286B56EA008E5F23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5630398286B56EA008E5F23 /* LaunchScreen.storyboard */; };
 		E56303A4286CDFBA008E5F23 /* ColorSquareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56303A3286CDFBA008E5F23 /* ColorSquareView.swift */; };
+		E5A9231028731D7C0082B81D /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A9230F28731D7C0082B81D /* ThirdViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		E5630399286B56EA008E5F23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E563039B286B56EA008E5F23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E56303A3286CDFBA008E5F23 /* ColorSquareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSquareView.swift; sourceTree = "<group>"; };
+		E5A9230F28731D7C0082B81D /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +48,7 @@
 		E5630381286B56E8008E5F23 = {
 			isa = PBXGroup;
 			children = (
+				E5A9230F28731D7C0082B81D /* ThirdViewController.swift */,
 				E563038C286B56E8008E5F23 /* StoryboardDemo */,
 				E563038B286B56E8008E5F23 /* Products */,
 			);
@@ -152,6 +155,7 @@
 				E56303A4286CDFBA008E5F23 /* ColorSquareView.swift in Sources */,
 				E563038E286B56E8008E5F23 /* AppDelegate.swift in Sources */,
 				E5356011286DE9160049F360 /* SecondViewController.swift in Sources */,
+				E5A9231028731D7C0082B81D /* ThirdViewController.swift in Sources */,
 				E5630390286B56E8008E5F23 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
